@@ -38,7 +38,7 @@ Stack::top() {
 StackEntry*
 Stack::pop() {
 
-    if((this->currEntries - 1) < this->currStackSize * 0.75) {
+    if((this->currEntries - 1) < this->currStackSize * 0.33) {
         contract();
     }
 
